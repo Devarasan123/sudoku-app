@@ -1,54 +1,33 @@
-# React + TypeScript + Vite
+# sudoku-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Sudoku game built with React and TypeScript.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a Sudoku puzzle game where you can input numbers and validate your moves. It includes a "Reveal" button to toggle showing the solution without breaking the game functionality.
 
-## Expanding the ESLint configuration
+The app highlights invalid entries in red and blocks editing of given puzzle numbers.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Classic 9x9 Sudoku board
+- Editable cells for user input
+- Validation of Sudoku rules (rows, columns, and 3x3 blocks)
+- Highlights invalid entries in red background
+- Reveal/hide solution toggle button
+- Clean and responsive UI
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Node.js installed (v14 or higher recommended)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Devarasan123/sudoku-app.git
+   ```
